@@ -16,7 +16,7 @@ from jinja2.loaders import FileSystemLoader
 from provider.authn import make_cls_from_name
 from six.moves.urllib import parse as urlparse
 
-from oic.oauth2 import rndstr
+from oic import rndstr
 from oic.oic.provider import AuthorizationEndpoint
 from oic.oic.provider import EndSessionEndpoint
 from oic.oic.provider import Provider

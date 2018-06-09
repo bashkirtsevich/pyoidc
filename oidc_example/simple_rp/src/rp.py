@@ -4,7 +4,7 @@ import os
 import cherrypy
 import yaml
 
-from oic.oauth2 import rndstr
+from oic import rndstr
 from oic.oic import Client
 from oic.oic.message import AuthorizationResponse
 

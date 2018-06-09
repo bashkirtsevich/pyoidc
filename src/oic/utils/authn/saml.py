@@ -20,7 +20,7 @@ from saml2.client import Saml2Client
 from saml2.config import SPConfig
 from saml2.s_utils import UnknownPrincipal
 from saml2.s_utils import UnsupportedBinding
-from saml2.s_utils import rndstr
+from oic import rndstr
 from saml2.s_utils import sid
 
 from oic.oauth2.exception import VerificationError
