@@ -220,8 +220,7 @@ def main():
     with open(os.path.join(path, name), "w") as f:
         f.write(json.dumps(jwks))
 
-    provider.jwks_uri.append(
-        "{}/static/{}".format(provider.baseurl, name))
+    provider.jwks_uri += "{}/static/{}".format(provider.baseurl, name)
 
     # Mount the WSGI callable object (app) on the root directory
     app_routing = setup_endpoints(provider)
